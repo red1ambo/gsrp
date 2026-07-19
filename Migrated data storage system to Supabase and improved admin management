@@ -1,0 +1,38 @@
+# Database & Admin System Update
+
+## Added
+- Migrated code storage to Supabase database
+- Added persistent admin and staff code management
+- Added Discord ID support for users
+- Added separate user information fields:
+  - Name
+  - Discord ID
+  - Access Code
+  - Status
+
+## Improved
+- Improved login validation system
+- Added database-backed access code verification
+- Improved staff management tools
+- Improved admin management tools
+- Updated code handling for:
+  - Code regeneration
+  - Suspension
+  - Termination
+  - User information editing
+
+## Database Changes
+- Added `discord_id` support to admin and staff records
+- Updated admin code records
+- Updated staff code records
+- Improved data structure for future expansion
+
+## Security Improvements
+- Removed reliance on temporary/local storage
+- Added proper database persistence
+- Improved access code management
+
+## Bug Fixes
+- Fixed access codes not being recognized after deployment
+- Fixed data not persisting between sessions
+- Fixed management tools not syncing correctly
